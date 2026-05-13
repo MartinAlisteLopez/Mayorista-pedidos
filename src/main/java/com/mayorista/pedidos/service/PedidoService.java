@@ -19,7 +19,7 @@ public class PedidoService {
     @Autowired
     private WebClient.Builder webClientBuilder;
 
-    private final String CATALOGO_URL = "http://localhost:8081/catalogo";
+    private final String CATALOGO_URL = "http://localhost:8081/api/v1/catalogo";
 
     public Pedido crearPedido(Pedido pedido) {
         try {
