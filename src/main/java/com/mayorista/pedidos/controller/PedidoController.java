@@ -26,6 +26,7 @@ public class PedidoController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
+
     @GetMapping
     public ResponseEntity<List<Pedido>> listarPedidos() {
         return new ResponseEntity<>(pedidoService.listarPedidos(), HttpStatus.OK);
